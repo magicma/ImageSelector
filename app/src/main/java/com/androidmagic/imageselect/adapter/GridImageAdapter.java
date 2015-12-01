@@ -77,5 +77,15 @@ public class GridImageAdapter extends BasicAdapter<String> {
             return holder;
         }
     }
+    
+    OnImgSelectListener listener;
+    
+    public interface OnImgSelectListener() {
+        void imgSelect();
+    }
+    
+    public void setOnImgSelectListener(OnImgSelectListener listener) {
+        this.listener = listener;
+    }
 
 }
